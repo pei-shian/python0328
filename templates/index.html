@@ -51,7 +51,7 @@
     </div>
   </div>
 </nav>
-<h3>以下是本網站預測下的大樂透號碼</h3>
+<h3>以下是本網站預測下期的大樂透號碼</h3>
 <table class='table table-striped table-bordered'>
 	<tr><td>特別號:{{ special_number }}</td><td colspan=5>
 	超神準預測，總有一天會中</td></tr>
@@ -63,7 +63,9 @@
 		{% endfor %}
 	</tr>
 </table>
-
+{% for post in posts %}
+	{{ post.id }}:{{ post.title }},{{ post.pub_date }}<br/>
+{% endfor %}
   	</div>
 
     <!-- Optional JavaScript; choose one of the two! -->
