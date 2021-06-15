@@ -29,3 +29,6 @@ def rank(request):
 	cities = City.objects.all()
 	return render(request,"rank.html",locals())
 
+def chart(request):
+	cities = City.objects.all()
+	return render(request,"chart.html",locals())
